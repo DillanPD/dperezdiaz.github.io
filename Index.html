@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Videos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Color de fondo gris medio */
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333; /* Color de fondo del encabezado */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333; /* Color de fondo del footer */
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .video-box {
+            width: calc(50% - 20px); /* 2 videos en una fila en dispositivos móviles */
+            margin-bottom: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .video-box:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        .video {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (min-width: 768px) {
+            .video-box {
+                width: calc(25% - 20px); /* 4 videos en una fila en dispositivos de escritorio */
+            }
+
+            .video-box:nth-child(4n) {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Página de Videos</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Contenedor de Videos 1</h2>
+        <div class="video-container">
+            <!-- Aquí puedes insertar tus videos y nombres -->
+            <div class="video-box">
+                <video class="video" src="video1.mp4" controls></video>
+                <h3>Video 1</h3>
+            </div>
+            <div class="video-box">
+                <video class="video" src="video2.mp4" controls></video>
+                <h3>Video 2</h3>
+            </div>
+            <div class="video-box">
+                <video class="video" src="video3.mp4" controls></video>
+                <h3>Video 3</h3>
+            </div>
+            <div class="video-box">
+                <video class="video" src="video4.mp4" controls></video>
+                <h3>Video 4</h3>
+            </div>
+        </div>
+
+        <h2>Contenedor de Videos 2</h2>
+        <div class="video-container">
+            <!-- Aquí puedes insertar tus videos y nombres -->
+            <div class="video-box">
+                <video class="video" src="video5.mp4" controls></video>
+                <h3>Video 5</h3>
+            </div>
+            <div class="video-box">
+                <video class="video" src="video6.mp4" controls></video>
+                <h3>Video 6</h3>
+            </div>
+            <div class="video-box">
+                <video class="video" src="video7.mp4" controls></video>
+                <h3>Video 7</h3>
+            </div>
+            <div class="video-box">
+                <video class="video" src="video8.mp4" controls></video>
+                <h3>Video 8</h3>
+            </div>
+            <div class="video-box">
+                <video class="video" src="video9.mp4" controls></video>
+                <h3>Video 9</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Derechos de autor © 2023</p>
+    </footer>
+</body>
+</html>
